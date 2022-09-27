@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 @SpringBootApplication
 public class BigIdyApplication {
-
+//pro id setup git
 	public static void main(String[] args) {
 		SpringApplication.run(BigIdyApplication.class, args);
 	}
