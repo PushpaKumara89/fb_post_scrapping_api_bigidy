@@ -20,7 +20,7 @@ public class DownLoadService {
 
     public Resource getFileResource(String fileCode, Location location) throws IOException {
         foundFile=null;
-        Path fileUploadDirectory = Paths.get("D:\\pushpakumara\\seleniumSreenshotApp\\fb_scrapping_screen_shot\\SeleniumPro\\screenshot\\"+location);
+        Path fileUploadDirectory = Paths.get("D:\\pushpakumara\\Wixis\\backup\\fb_scrapping_web\\fb_scrapping_screen_shot\\SeleniumPro\\screenshot\\"+location);
 
         Files.list(fileUploadDirectory).forEach(file->{
             if(file.getFileName().toString().startsWith(fileCode)){

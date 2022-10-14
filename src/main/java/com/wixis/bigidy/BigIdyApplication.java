@@ -1,7 +1,6 @@
 package com.wixis.bigidy;
 
 import com.wixis.bigidy.authentication.domain.Role;
-import com.wixis.bigidy.authentication.domain.User;
 import com.wixis.bigidy.authentication.service.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -11,8 +10,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
-import java.util.ArrayList;
 
 @SpringBootApplication
 public class BigIdyApplication {
