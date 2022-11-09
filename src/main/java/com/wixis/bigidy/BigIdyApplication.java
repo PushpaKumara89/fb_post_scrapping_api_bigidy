@@ -36,8 +36,8 @@ public class BigIdyApplication {
 	@Bean
 	CommandLineRunner run (UserService userService){
 		return args -> {
-			/*userService.saveRole(new Role(null, "ROLE_USER"));
-			userService.saveRole(new Role(null, "ROLE_MANAGER"));
+			userService.saveRole(new Role(null, "ROLE_USER"));
+			/*userService.saveRole(new Role(null, "ROLE_MANAGER"));
 			userService.saveRole(new Role(null, "ROLE_ADMIN"));
 			userService.saveRole(new Role(null, "ROLE_SUPER_AMIN"));
 

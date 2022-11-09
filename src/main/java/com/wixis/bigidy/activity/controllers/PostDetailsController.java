@@ -7,6 +7,7 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 
@@ -19,14 +20,14 @@ public class PostDetailsController {
     private final PostDetailsService service;
 
     @GetMapping("/get_page_img")
-    public ArrayList<String> getPageScreenShots(@RequestHeader String page){
-        ArrayList<String> screenShots = service.getScreenShots(page);
+    public List<String> getPageScreenShots(@RequestHeader String page){
+        List<String> screenShots = service.getScreenShots(page);
         return screenShots;
     }
 
     @GetMapping("/get_pages")
-    public Set<Page> getPageName(@RequestHeader String txt){
-        Set<Page> pages = service.getPages(txt);
+    public List<Page> getPageName(@RequestHeader String txt){
+        List<Page> pages = service.getPages(txt);
         return pages;
     }
 }
